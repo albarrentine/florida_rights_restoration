@@ -11,10 +11,10 @@ I hope these maps will be useful for organizations in Florida who are mobilizing
 
 If you are organizing/canvassing on the ground and want targeted voter lists of likely supporters, please contact me at albarrentine@gmail.com.
 
-# Map of Petitions needed by County and District
+## Map of Petitions needed by County and District
 
-<iframe width="100%" height="520" frameborder="0" src="https://albarrentine.carto.com/builder/9fa3986e-fe22-4586-90c4-bc26e11d6978/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+https://albarrentine.carto.com/builder/9fa3986e-fe22-4586-90c4-bc26e11d6978/embed
 
-# Map of Petitions needed by District
+## Map of Petitions needed by District
 
-<iframe width="100%" height="520" frameborder="0" src="https://albarrentine.carto.com/builder/00b1b6da-e601-4a89-98f0-5eef9df5ea50/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+https://albarrentine.carto.com/builder/00b1b6da-e601-4a89-98f0-5eef9df5ea50/embed
