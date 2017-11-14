@@ -13,8 +13,12 @@ If you are organizing/canvassing on the ground and want targeted voter lists of 
 
 ## Map of Petitions needed by County and District
 
-https://albarrentine.carto.com/builder/9fa3986e-fe22-4586-90c4-bc26e11d6978/embed
+![FRRC Petition Signatures Needed by County and Congressional District](https://user-images.githubusercontent.com/238455/32801681-c18c4ef6-c94b-11e7-9518-cf95eec6b352.jpg)
+
+Latest: https://albarrentine.carto.com/builder/9fa3986e-fe22-4586-90c4-bc26e11d6978/embed
 
 ## Map of Petitions needed by District
 
-https://albarrentine.carto.com/builder/00b1b6da-e601-4a89-98f0-5eef9df5ea50/embed
+![FRRC Petition Signatures Needed by Congressional District](https://user-images.githubusercontent.com/238455/32802113-11827196-c94d-11e7-9d6b-f6cd08390899.jpg)
+
+Latest: https://albarrentine.carto.com/builder/00b1b6da-e601-4a89-98f0-5eef9df5ea50/embed
