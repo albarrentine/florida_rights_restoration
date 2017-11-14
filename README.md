@@ -1,4 +1,4 @@
-# Florida Rights Restoration Coalition
+# Restoring voting rights for formerly incarcerated Floridians
 The [Florida Rights Restoration Coalition](https://floridarrc.com) is advocating to restore voting rights to citizens with past felony convictions. The state's current constitution, enacted during Jim Crow, disenfranchises 1 in 4 Black Floridians permanently. Voting is a right, not a privilege, and needs to be treated as such for returning citizens as well.
 
 The FRRC's [ballot initiative](https://www.floridiansforafairdemocracy.com/amendment-text) in 2018 will give over 1.7M people who have completed their sentences the right to vote, along with other important civil rights that come with it such as eligibility to serve on a jury and run for elected office.
