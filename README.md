@@ -13,7 +13,7 @@ If you are organizing/canvassing on the ground and want targeted voter lists of 
 
 ## Signatures Still Needed by Congressional District
 
-The by-district map is the big picture map. Districts are shaded by the number of signatures **still needed** in that district i.e. the required number of signatures minus the number that have been signed already. Lighter regions are essentially done (in terms of petitions, but it's certainly still worth canvassing those areas to get voters involved for 2018), and the darker regions need the most work.
+This is the big picture map. Districts are shaded by the number of signatures *still needed* i.e. the required number of signatures minus the number that have been signed already. Lighter regions are essentially done (in terms of petitions, but it's certainly still worth canvassing those areas to get voters involved for 2018), and the darker regions need the most work.
 
 ![FRRC Petition Signatures Needed by Congressional District](https://user-images.githubusercontent.com/238455/32802113-11827196-c94d-11e7-9d6b-f6cd08390899.jpg)
 
