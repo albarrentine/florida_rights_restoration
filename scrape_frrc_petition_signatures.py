@@ -18,7 +18,7 @@ date_regex = re.compile('\(\s*as of ([\d]{2}/\d{2}/\d{4})\s*\)', re.I)
 html_whitespace_regex = re.compile('(?:\s+|(?:&nbsp;)+)')
 number_regex = re.compile('[\d,]+')
 
-district_regex = re.compile('DISTRICT\s*[\d]+', re.I)
+district_regex = re.compile('DISTRICT\s*([\d]+)', re.I)
 needed_for_review_regex = re.compile('Needed for Review\s*([\d,]+)', re.I)
 needed_for_ballot_regex = re.compile('Needed for Ballot\s*([\d,]+)', re.I)
 
@@ -73,8 +73,9 @@ def extract_petition_data(html):
         needed_for_ballot = None
 
         for line in heading:
-            if district_regex.match(line):
-                district_name = line
+            district_match = district_regex.match(line)
+            if (district_match):
+                district_name = district_match.group(1).zfill(2)
             else:
                 review_match = needed_for_review_regex.match(line)
                 if review_match:
@@ -98,12 +99,12 @@ def extract_petition_data(html):
             if not name_match:
                 continue
 
-            name = name_match.group(0)
+            name = name_match.group(0).strip()
 
             date_match = date_regex.search(county_cell)
             as_of_date = None
             if date_match:
-                as_of_date = date_match.group(1)
+                as_of_date = date_match.group(1).strip()
 
             if i == 0 and name.upper() == u'COUNTY':
                 continue
@@ -127,10 +128,10 @@ def scrape_signature_counts(url=OFFICIAL_COUNTS_URL, out_dir=FRRC_DATA_DIR, peti
     f = open(os.path.join(out_dir, petitions_file), 'w')
     writer = csv.writer(f, delimiter='\t')
 
-    petition_headers = ['District', 'Valid Signatures', 'Needed for Ballot']
+    petition_headers = ['District', 'Valid Signatures', 'Needed for Ballot', 'Signatures Remaining']
     writer.writerow(petition_headers)
 
-    totals_by_district = [(d.name, d.total_petitions, d.needed_for_ballot) for d in districts]
+    totals_by_district = [(d.name, d.total_petitions, d.needed_for_ballot, max(0, d.needed_for_ballot - d.total_petitions)) for d in districts]
 
     writer.writerows(totals_by_district)
 
