@@ -21,7 +21,7 @@ Latest: https://albarrentine.carto.com/builder/00b1b6da-e601-4a89-98f0-5eef9df5e
 
 ## Signatures Still Needed by County and Congressional District
 
-The county-district map is more tactical. Here we apportion the remaining signatures in a district by counties (or fractions thereof) according to their share of the 2016 Democratic votes in that district. Since counties may be split into multiple districts, the votes for each county-district were rolled up from the more granular precinct tallies.
+The county-district map is more tactical. Here we apportion the remaining signatures in a district by counties (or fractions thereof) according to their share of the 2016 Democratic votes in that district. Since counties may be split into multiple districts, the votes for each county-district were rolled up from the more granular precinct tallies. Note: there are some counties that grow more important in this map as they're "carrying" their district in terms of likely supporters e.g. the Miami-Dade portion of District 25, which contains the large ~95% Latina/o city of Hialeah, accounted for over 72% of the Democratic votes from the 25th District, so it makes more sense to spend more time there.
 
 ![FRRC Petition Signatures Needed by County and Congressional District](https://user-images.githubusercontent.com/238455/32801681-c18c4ef6-c94b-11e7-9518-cf95eec6b352.jpg)
 
