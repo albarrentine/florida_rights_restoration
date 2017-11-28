@@ -81,12 +81,14 @@ def district_petitions(county_districts_filename):
     districts = {}
     headers = reader.next()
     for row in reader:
-        district, valid_signatures, needed_for_ballot, remaining = list(range(len(headers)))
+        district, valid_signatures, needed_for_ballot, remaining, least_recent, most_recent = list(range(len(headers)))
         row_kvs = {
             headers[district]: row[district],
             headers[valid_signatures]: int(row[valid_signatures]),
             headers[needed_for_ballot]: int(row[needed_for_ballot]),
             headers[remaining]: int(row[remaining]),
+            headers[least_recent]: row[least_recent],
+            headers[most_recent]: row[most_recent],
         }
 
         districts[row[district]] = row_kvs

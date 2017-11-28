@@ -5,6 +5,7 @@ import re
 import requests
 
 from collections import Counter
+from dateutil.parser import parse as date_parse
 
 OFFICIAL_COUNTS_URL = 'http://dos.elections.myflorida.com/initiatives/initSignDetailCounty.asp?account=64388&seqnum=1&ctype=CSV&elecyear=2018'
 FRRC_DATA_DIR = 'data'
@@ -56,6 +57,26 @@ class DistrictPetitions(object):
     @property
     def total_petitions(self):
         return sum((c.petitions for c in self.counties))
+
+    @property
+    def county_dates(self):
+        return [date_parse(c.as_of_date) for c in self.counties if c.as_of_date]
+
+    @property
+    def least_recent_update(self):
+        dates = self.county_dates
+        if not dates:
+            return None
+        longest_update = min(dates)
+        return longest_update.strftime('%m/%d/%Y')
+
+    @property
+    def most_recent_update(self):
+        dates = self.county_dates
+        if not dates:
+            return None
+        last_update = max(dates)
+        return last_update.strftime('%m/%d/%Y')
 
 
 def extract_petition_data(html):
@@ -128,10 +149,10 @@ def scrape_signature_counts(url=OFFICIAL_COUNTS_URL, out_dir=FRRC_DATA_DIR, peti
     f = open(os.path.join(out_dir, petitions_file), 'w')
     writer = csv.writer(f, delimiter='\t')
 
-    petition_headers = ['District', 'Valid Signatures', 'Needed for Ballot', 'Signatures Remaining']
+    petition_headers = ['District', 'Valid Signatures', 'Needed for Ballot', 'Signatures Remaining', 'Least Recent Update', 'Most Recent Update']
     writer.writerow(petition_headers)
 
-    totals_by_district = [(d.name, d.total_petitions, d.needed_for_ballot, max(0, d.needed_for_ballot - d.total_petitions)) for d in districts]
+    totals_by_district = [(d.name, d.total_petitions, d.needed_for_ballot, max(0, d.needed_for_ballot - d.total_petitions), d.least_recent_update or '', d.most_recent_update or '') for d in districts]
 
     writer.writerows(totals_by_district)
 
