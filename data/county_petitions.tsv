@@ -7,8 +7,8 @@ Brevard	16526
 Broward	85273
 Calhoun	145
 Charlotte	8487
-Citrus	3242
-Clay	4490
+Citrus	3273
+Clay	4603
 Collier	2843
 Columbia	2089
 DeSoto	324
@@ -21,21 +21,21 @@ Gadsden	3259
 Gilchrist	0
 Glades	38
 Gulf	282
-Hamilton	147
+Hamilton	148
 Hardee	113
 Hendry	374
 Hernando	5320
 Highlands	826
 Hillsborough	58583
-Holmes	45
+Holmes	62
 Indian River	2345
 Jackson	357
 Jefferson	576
 Lafayette	50
 Lake	6313
-Lee	19783
-Leon	20898
-Levy	711
+Lee	20055
+Leon	21247
+Levy	736
 Liberty	99
 Madison	629
 Manatee	5198
@@ -47,16 +47,16 @@ Nassau	1296
 Okaloosa	1200
 Okeechobee	268
 Orange	44758
-Osceola	12669
-Palm Beach	43612
-Pasco	18759
-Pinellas	67508
-Polk	27351
+Osceola	14854
+Palm Beach	46823
+Pasco	26308
+Pinellas	67908
+Polk	27590
 Putnam	2482
 Santa Rosa	1069
 Sarasota	12981
 Seminole	19817
-St. Johns	7532
+St. Johns	7773
 St. Lucie	14569
 Sumter	2198
 Suwannee	140
@@ -65,4 +65,4 @@ Union	289
 Volusia	29995
 Wakulla	1017
 Walton	260
-Washington	223
+Washington	224
